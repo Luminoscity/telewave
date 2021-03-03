@@ -1,5 +1,5 @@
 # Telewave
 
-[Play it here](https://luminoscity.github.io/telewave/)
+[Play it here](https://luminoscity.github.io/wavelength/)
 
 [Instructions here](instructions.md)
