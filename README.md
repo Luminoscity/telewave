@@ -1,5 +1,5 @@
 # Telewave
 
-[Play it here](https://ihtfy.github.io/telewave/)
+[Play it here](https://luminoscity.github.io/telewave/)
 
 [Instructions here](instructions.md)

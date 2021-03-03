@@ -90,6 +90,18 @@ function update_seed() {
 	fire();
 }
 
+function update_seed_visibility() {
+	var checkbox = document.getElementById("show-seed");
+	var seedBox = document.getElementById("seedContainer");
+	var spacer = document.getElementById("seedbox-spacer");
+	if (checkbox.checked == true) {
+		seedBox.style.display = "block";
+		spacer.style.width = "0%";
+	} else {
+		seedBox.style.display = "none";
+		spacer.style.width = "15.5%";
+	}
+}
 
 function update_percentages() {
 	var checkbox = document.getElementById("percentages");
