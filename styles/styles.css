@@ -233,6 +233,10 @@ div.scoreboard {
   display: table-row-group;
 }
 
+.seed-container {
+  visibility: hidden;
+}
+
 .seed-container input {
   vertical-align: middle;
 }

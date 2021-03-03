@@ -5,6 +5,7 @@ if (urlParams.get('seed')) {
 }
 
 var randpos = 0
+const RandSeedRange = 1000000
 
 //init
 $("#seed").keyup(function () {
@@ -13,7 +14,7 @@ $("#seed").keyup(function () {
 
 
 $("#seed").val(
-	urlParams.get('seed') || Math.floor(Math.random() * 10000)
+	urlParams.get('seed') || Math.floor(Math.random() * RandSeedRange)
 );
 fire();
 
@@ -90,4 +91,3 @@ function copyStringToClipboard(str) {
 	// Remove temporary element
 	document.body.removeChild(el);
 }
-

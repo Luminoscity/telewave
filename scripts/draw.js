@@ -84,7 +84,7 @@ function button_guess() {
 
 function update_seed() {
 	Math.seedrandom();
-	$("#seed").val(Math.floor(Math.random() * 10000));
+	$("#seed").val(Math.floor(Math.random() * RandSeedRange));
 	document.getElementById("guesser").value = 500;
 	document.getElementById("guessdisp").value = 50;
 	fire();
@@ -93,13 +93,10 @@ function update_seed() {
 function update_seed_visibility() {
 	var checkbox = document.getElementById("show-seed");
 	var seedBox = document.getElementById("seedContainer");
-	var spacer = document.getElementById("seedbox-spacer");
 	if (checkbox.checked == true) {
-		seedBox.style.display = "block";
-		spacer.style.width = "0%";
+		seedBox.style.visibility = "visible";
 	} else {
-		seedBox.style.display = "none";
-		spacer.style.width = "15.5%";
+		seedBox.style.visibility = "hidden";
 	}
 }
 
